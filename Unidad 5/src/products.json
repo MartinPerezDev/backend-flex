@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Teclado Logitech",
+    "price": 1200,
+    "thumbnail": "/img/teclado.png"
+  },
+  {
+    "id": 2,
+    "title": "Mouse Redragon",
+    "price": 500,
+    "thumbnail": "/img/mouse.png"
+  },
+  {
+    "id": 3,
+    "title": "Auriculares Logitech",
+    "price": 600,
+    "thumbnail": ""
+  },
+  {
+    "id": 4,
+    "title": "Auriculares Redragon",
+    "price": 900,
+    "thumbnail": "/img/1744075593352-auriculares-redragon.jpg"
+  }
+]

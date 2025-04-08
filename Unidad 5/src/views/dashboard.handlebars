@@ -1,0 +1,36 @@
+<div class="dashboard">
+  <h1 class="dashboard-title">Dashboard</h1>
+
+  {{#with user}}
+    <div class="user-info">
+      <h2 class="username">{{username}}</h2>
+      {{#if isAdmin}}
+        <h3 class="admin-message admin-true">Permisos de administrador</h3>
+      {{else}}
+        <h3 class="admin-message admin-false">No tienes permisos de administrador</h3>
+      {{/if}}
+    </div>
+  {{/with}}
+
+  <div class="product-grid">
+    {{#each products}}
+      <div class="product-card">
+        <div class="product-image-container">
+          <img class="product-image" src={{this.thumbnail}} alt="">
+        </div>
+        <h2 class="product-title">{{this.title}}</h2>
+        <h3 class="product-price">Precio: {{this.price}}</h3>
+      </div>
+    {{/each}}
+  </div>
+
+  <div>
+    <form action="http://localhost:8080/api/products" method="post" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="nombre de producto">
+      <input type="number" name="price" placeholder="precio de producto">
+      <input type="file" name="file">
+
+      <button type="submit">Agregar producto</button>
+    </form>
+  </div>
+</div>
